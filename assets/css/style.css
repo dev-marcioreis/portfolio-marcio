@@ -208,6 +208,33 @@ img {
 }
 
 
+/*==========Scroll Up==========*/
+.scroll__up {
+  position: fixed;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+.scroll__up i {
+  font-size: 2.25rem;
+  color: var(--text-color-light);
+}
+
+/*==========JavaScript Scroll Up==========*/
+.show-scroll {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 /*==========Variables Dark theme==========*/
 body.dark-theme {
   --title-color: hsl(207, 4%, 95%);
@@ -239,7 +266,7 @@ body.dark-theme {
 /*==========Header==========*/
 .header {
   position: fixed;
-  bottom: 1.5rem;
+  bottom: 1rem;
   left: 0;
   width: 100%;
   z-index: var(--z-fixed);
@@ -283,7 +310,7 @@ body.dark-theme {
     background: var(--body-color);
     border: var(--border);
     box-shadow: var(--shadow);
-    padding: 2rem 1.5rem 5rem;
+    padding: 1rem .5rem 5rem;
     border-radius: .5rem;
     transition: bottom .3s;
   }
@@ -305,6 +332,7 @@ body.dark-theme {
   grid-template-columns: repeat(3, max-content);
   place-items: center;
   gap: 1rem 2rem;
+  padding: .5rem .7rem;
 }
 .navbar__link {
   display: flex;
@@ -333,7 +361,7 @@ body.dark-theme {
 
 /*==========JavaScript navbar==========*/
 .show__menu {
-  bottom: 1.5rem;
+  bottom: 1rem;
 }
 
 
@@ -686,3 +714,134 @@ body.dark-theme {
 .projects__container .swiper-pagination-bullet-active {
   background: var(--light-blue-color);
 }
+
+
+/*==========Portfolio==========*/
+.portfolio .sec__subtitle a {
+  color: var(--text-color-light);
+  font-weight: 600;
+  transition: var(--transition);
+}
+.portfolio .sec__subtitle a:hover {
+  color: var(--light-blue-color);
+}
+.portfolio__card {
+  position: relative;
+  height: 70vh;
+}
+.card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--white-color);
+  box-shadow: var(--shadow-3);
+  border: var(--border);
+  border-radius: .5rem;
+  width: 300px;
+  height: 450px;
+  padding: 1rem;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.card__content:hover {
+  box-shadow: none;
+}
+.portfolio__image {
+  position: absolute;
+  top: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+}
+
+.portfolio__title {
+  position: absolute;
+  bottom: 6rem;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: var(--shadow-2);
+  text-transform: capitalize;
+  color: var(--light-blue-color);
+}
+.portfolio__eye {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  transform: translate(-50%);
+  width: 2rem;
+  height: 2rem;
+  background: var(--light-blue-color);
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.portfolio__eye i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.25rem;
+  color: var(--white-color);
+}
+.layer__title {
+  position: absolute;
+  top: 45%;
+  left: -60%;
+  transform: translate(-50%);
+  width: 100%;
+  color: var(--white-color);
+  font-weight: 700;
+  text-transform: capitalize;
+  text-shadow: var(--shadow-1);
+}
+.portfolio__sumary-1 {
+  position: absolute;
+  top: -53%;
+  left: 52%;
+  transform: translate(-50%);
+  width: 83%;
+  color: var(--white-color);
+  font-weight: 300;
+}
+.portfolio__sumary-2 {
+  position: absolute;
+  top: -60%;
+  left: 52%;
+  transform: translate(-50%);
+  width: 83%;
+  color: var(--white-color);
+  font-weight: 300;
+}
+.portfolio__image-1 {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: var(--shadow);
+  filter: contrast(1.2);
+}
+.portfolio__btns {
+  position: absolute;
+  bottom: -50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.btn__back, .btn__portfolio {
+  color: var(--white-color);
+  text-shadow: var(--shadow-1);
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.btn__back i, .btn__portfolio i {
+  font-size: 1.5rem;
+}
+
