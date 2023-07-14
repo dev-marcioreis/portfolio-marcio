@@ -399,7 +399,6 @@ img {
 /*==========Home==========*/
 .home__container {
   row-gap: 2rem;
-  padding-block-start: 2rem;
 }
 .home__description {
   position: relative;
@@ -466,7 +465,7 @@ img {
 }
 .home__socials {
   position: fixed;
-  top: 0;
+  top: -100%;
   left: 0;
   right: 0;
   padding: .7rem 0;
@@ -510,6 +509,7 @@ img {
 
 /*==========JavaScript Home socials==========*/
 .scrolling-socials {
+  top: 0;
   box-shadow: var(--shadow);
 }
 
