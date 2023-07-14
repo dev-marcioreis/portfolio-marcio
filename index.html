@@ -412,7 +412,7 @@
 		<!--========Portfólio========-->
 		<section class="portfolio section">
 			<h2 class="sec__title">projeto recente</h2>
-			<h3 class="sec__subtitle">Mais projetos no meu <a href="https://github.com/dev-marcioreis" target="_blank">Github <i class="uil uil-github-alt"></i></a></h3>
+			<span class="sec__subtitle">Mais projetos no meu <a href="https://github.com/dev-marcioreis" target="_blank">Github <i class="uil uil-github-alt"></i></a></span>
 			<div class="portfolio__card">
 				<div class="card__content">
 					<div class="layer-1">
@@ -442,7 +442,54 @@
 
 		<!--========Contact========-->
 		<section class="contact section" id="contact">
-
+			<h2 class="sec__title">contato</h2>
+			<span class="sec__subtitle">Fale comigo hoje mesmo</span>
+			<div class="contact__container container grid">
+				<div class="contact__content">
+					<h3 class="contact__title">
+						<i class="uil uil-chat"></i> Fale comigo
+					</h3>
+					<div class="contact__info">
+						<div class="contact__info-data">
+							<span class="info__title"><i class="uil uil-envelope-edit"></i> Email</span>
+							<span class="info__text">dev.marcioreis@gmail.com</span>
+						</div>
+						<div class="contact__info-data">
+							<span class="info__title"><i class="uil uil-mobile-android-alt"></i> Telefone</span>
+							<span class="info__text">(11) 99434-1245</span>
+							<a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511994341245" target="_blank" class="contact__btn">Mande um Whats <i class="uil uil-whatsapp"></i></a>
+						</div>
+						<div class="contact__info-data">
+							<span class="info__title"><i class="uil uil-comment-alt-message"></i> Linkedin</span>
+							<span class="info__text">Mande uma mensagem</span>
+							<a href="https://www.linkedin.com/in/devmarcioreis/" target="_blank" class="contact__btn">Linkedin <i class="uil uil-linkedin-alt"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="contact__content">
+					<h3 class="contact__title">
+						<i class="uil uil-lightbulb-alt"></i> Envie sua ideia de projeto
+					</h3>
+					<form action="" class="contact__form" id="contactForm">
+						<div class="contact__form-section">
+							<label class="contact__form-label"><i class="uil uil-user"></i> Nome</label>
+							<input type="text" name="user_name" class="contact__form-input" id="contactName" placeholder="*Digite seu nome..." required>
+						</div>
+						<div class="contact__form-section">
+							<label class="contact__form-label"><i class="uil uil-envelope-upload"></i> Email</label>
+							<input type="text" name="user_email" class="contact__form-input" id="contactEmail" placeholder="*Digite seu email..." required>
+						</div>
+						<div class="contact__form-section contact__form-area">
+							<label class="contact__form-label"><i class="uil uil-folder-open"></i> Projeto</label>
+							<textarea name="user_project" id="contactProject" class="contact__form-input area" placeholder="*Detalhe sua ideia..."></textarea>
+						</div>
+						<span class="contact__message" id="contactMessage"></span>
+						<button type="submit" class="btn contact__btn">
+							Enviar <i class="uil uil-message"></i>
+						</button>
+					</form>
+				</div>
+			</div>
 		</section>
 
 	</main>
@@ -472,6 +519,7 @@
 	<script src="assets/js/script.js"></script>
 
 	<!--========Email JS========-->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 
 </body>

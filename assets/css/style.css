@@ -349,8 +349,13 @@ body.dark-theme {
 }
 .navbar__close {
   position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+  top: -2rem;
+  right: 0;
+  background: var(--white-color);
+  border-top: var(--border);
+  border-left: var(--border);
+  border-top-left-radius: .5rem;
+  padding: .1rem .7rem;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -842,3 +847,129 @@ body.dark-theme {
   font-size: 1.5rem;
 }
 
+
+/*==========Contact==========*/
+.contact {
+  margin-block-end: 10rem;
+}
+.contact__container {
+  row-gap: 3rem;
+}
+.contact__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--text-color-light);
+  margin-block-end: 3rem;
+}
+.contact__title i {
+  font-size: 1rem;
+  color: var(--light-blue-color);
+}
+.contact__info, .contact__info-data, .contact__form {
+  display: grid;
+}
+.contact__info {
+  row-gap: 1.25rem;
+}
+.contact__info-data {
+  row-gap: .5rem;
+}
+.info__title {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+.info__text {
+  color: var(--text-color-light);
+}
+.contact__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  width: max-content;
+  background: var(--white-color);
+  color: var(--text-color-light);
+}
+.contact__btn i {
+  font-size: 1rem;
+  transition: transform .3s;
+  color: var(--light-blue-color);
+}
+.contact__btn:hover i {
+  transform: translateX(.25rem);
+}
+.contact__form {
+  position: relative;
+  row-gap: 2.2rem;
+}
+.contact__form-section {
+  position: relative;
+  height: 3rem;
+}
+.contact__form-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem .5rem 1.5rem 1rem;
+  border-radius: .5rem;
+  box-shadow: var(--shadow);
+  font-size: var(--normal-font-size);
+  color: var(--text-color-light);
+  background: var(--white-color);
+  border-right: var(--border);
+  border-left: var(--border);
+  border-bottom: var(--border);
+  
+  border-top-left-radius: 0;
+  z-index: 1;
+}
+.contact__form-label {
+  position: absolute;
+  top: -1.3rem;
+  left: 0;
+  z-index: 10;
+  padding: .2rem .5rem;
+  background: var(--white-color);
+  font-size: var(--smaller-font-size);
+  border-top: var(--border);
+  border-right: var(--border);
+  border-left: var(--border);
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+.contact__form-label i {
+  color: var(--light-blue-color);
+}
+.contact__message {
+  position: absolute;
+  bottom: -7.2rem;
+  left: .3rem;
+  padding: 1rem 0;
+}
+.area {
+  height: 7rem;
+  resize: none;
+}
+.contact__form .btn {
+  position: absolute;
+  bottom: -7rem;
+  right: .3rem;
+  cursor: pointer;
+}
+
+/*==========JavaScript Contact message==========*/
+.contact__message-red {
+  color: var(--red-color);
+  font-weight: 600;
+  transition: var(--transition);
+}
+.contact__message-blue {
+  color: var(--light-blue-color);
+  font-weight: 600;
+  transition: var(--transition);
+}

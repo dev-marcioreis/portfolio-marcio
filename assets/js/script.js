@@ -109,3 +109,41 @@ tTwo.to('.portfolio__btns', {
   duration: 1.5,
 }, 0.5)
 
+
+// Contact
+const contactForm = document.querySelector('#contactForm')
+const contactName = document.querySelector('#contactName')
+const contactEmail = document.querySelector('#contactEmail')
+const contactProject = document.querySelector('#contactProject')
+const contactMessage = document.querySelector('#contactMessage')
+
+const sendEmail = e => {
+  e.preventDefault()
+
+    if(contactName.value === '' | contactEmail.value === '' | contactProject.value === '') {
+      contactMessage.classList.remove('contact__message-blue')
+      contactMessage.classList.add('contact__message-red')
+
+      contactMessage.textContent = '*Preencha os campos'
+    } else {
+      emailjs.sendForm('service_94ioeei', 'template_5qerzom', '#contactForm', 'Zsn6MiCroxal55rla')
+        .then(() => {
+          contactMessage.classList.add('contact__message-blue')
+          contactMessage.textContent = 'Projeto enviado!'
+
+          setTimeout(() => {
+            contactMessage.textContent = ''
+          }, 4000)
+
+        }, (error) => {
+          alert('Desculpe o transtorno, estamos verificando...', error)
+        })
+
+        contactName.value = ''
+        contactEmail.value = ''
+        contactProject.value = ''
+    }
+  
+}
+
+contactForm.addEventListener('submit', sendEmail)
