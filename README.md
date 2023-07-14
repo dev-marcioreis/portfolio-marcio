@@ -2,13 +2,12 @@
 
 ---
 
-Meu novo portfólio em desenvolvimento.<br>
-Sendo desenvolvido em mobile first.
+Projeto desenvolvido em mobile first.
 
-## 🚀 Em desenvolvimento
+## 🚀 Finalizado!
 
 ## 📋 Tecnologias
-HTML5 + CSS3 + JavaScript - GSPA + Swiper + Scrollreveal
+HTML5 + CSS3 + JavaScript - GSPA + Swiper + Scrollreveal + Emailjs
 
 ## ✒️ Autor
 Márcio Reis
@@ -16,7 +15,10 @@ Márcio Reis
 😊 Link de acesso: https://dev-marcioreis.github.io/portfolio-marcio/
 
 ---
-![image](https://github.com/dev-marcioreis/portfolio-marcio/assets/122680054/6577f531-53a2-4e46-b0a3-66a5e28b8701)
+![image](https://github.com/dev-marcioreis/portfolio-marcio/assets/122680054/a44265b6-b970-4e4b-85f3-bd13a79430cc)
+
+![image](https://github.com/dev-marcioreis/portfolio-marcio/assets/122680054/714109a3-afc9-4277-88d7-a4e445e5089d)
+
 
 
 
