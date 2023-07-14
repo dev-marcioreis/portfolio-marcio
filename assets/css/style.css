@@ -277,9 +277,6 @@ img {
     --smaller-font-size: .813rem;
     --tiny-font-size: .688rem;
   }
-  section {
-    padding: 6rem 0;
-  }
 
 }
 
@@ -362,7 +359,7 @@ img {
   transition: color .3s;
 }
 .navbar__link:hover {
-  color: var(--title-color);
+  color: var(--light-blue-color);
 }
 .navbar__link i {
   color: var(--light-blue-color);
@@ -387,6 +384,10 @@ img {
 }
 .scrolling-navbar {
   box-shadow: var(--shadow);
+}
+.active__link-section.navbar__link {
+  color: var(--light-blue-color);
+  transition: var(--transition);
 }
 .active__link-section.navbar__link i {
   background: var(--light-blue-color);
@@ -483,7 +484,7 @@ img {
   transition: color .3s;
 }
 .home__socials-link:hover {
-  color: var(--title-color);
+  color: var(--light-blue-color);
 }
 .home__info {
   display: grid;
@@ -1039,3 +1040,185 @@ img {
   font-size: var(--normal-font-size);
   font-weight: 600;
 }
+
+
+/*==========Media Query small==========*/
+@media (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+  .navbar__list {
+    gap: 1rem 1.25rem;
+  }
+  .skills__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects__image {
+    width: 220px;
+    justify-self: center;
+  }
+  .card__content {
+    width: 280px;
+    height: 400px;
+  }
+  .portfolio__title {
+    top: 17rem;
+  }
+
+}
+
+/*==========Media Query medium==========*/
+@media (min-width: 576px) {
+  .skills__container {
+    justify-content: center;
+  }
+  .projects__container {
+    overflow: hidden;
+    width: 400px;
+  }
+
+}
+
+/*==========Media Query Mobile==========*/
+@media (min-width: 768px) {
+  .home__container {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .home__content {
+    margin-block-start: -6rem;
+  }
+  .home__description {
+    order: 2;
+  }
+  .home__info {
+    margin-block-start: 10rem;
+  }
+  .home__info:nth-child(3) {
+    order: 3;
+    text-align: right;
+  }
+  .home__info-description {
+    padding-right: 0;
+  }
+  .skills__container {
+    grid-template-columns: repeat(2, max-content);
+    gap: 4rem;
+  }
+  .qualifications__container {
+    grid-template-columns: repeat(2, max-content);
+    gap: 7rem;
+    justify-content: center;
+  }
+  .services__container {
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+    justify-content: center;
+  }
+  .projects__container {
+    width: 500px;
+  }
+  .contact__container {
+    grid-template-columns: repeat(2, max-content);
+    gap: 4rem;
+    justify-content: center;
+  }
+  .contact__form {
+    width: 400px;
+  }
+
+}
+
+
+/*==========Media Query Desktop==========*/
+@media (min-width: 992px) {
+  .header {
+    top: 0;
+    height: var(--header-height);
+    background: var(--body-color);
+    border: 0;
+    transition: var(--transition);
+  }
+  .navbar__logo {
+    padding: 0 0 0 1rem;
+  }
+  .navbar {
+    width: initial;
+    background: var(--body-color);
+    height: var(--header-height);
+    padding: 0 1rem 0 0;
+  }
+  .navbar__link i, .navbar__toggle, .navbar__close {
+    display: none;
+  }
+  .navbar__menu {
+    width: initial;
+    margin-left: auto;
+  }
+  .navbar__list {
+    display: flex;
+    gap: 2.5rem;
+    margin-right: .5rem;
+  }
+  .navbar__link {
+    font-size: var(--normal-font-size);
+  }
+  .section {
+    padding-block: 7rem 0;
+  }
+  .container {
+    margin-inline: auto;
+  }
+  .home__container {
+    padding: 0 1rem;
+  }
+  .home__content {
+    margin-block-start: 0;
+  }
+  .home__title {
+    font-size: 2.2rem;
+  }
+  .scroll__up {
+    left: 97%;
+    bottom: -.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--light-blue-color);
+  }
+  .scroll__up i {
+    color: var(--white-color);
+  }
+  .home__shape-w1, .home__shape-w2 {
+    display: none;
+  }
+  .home__socials {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 25%;
+    height: 3rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-3);
+  }
+  .skills__container, .qualifications__container {
+    gap: 10rem;
+  }
+  .services__container {
+    grid-template-columns: repeat(3, max-content);
+    gap: 1rem;
+  }
+  .projects__container {
+    width: 900px;
+  }
+  .projects__image {
+    width: 350px;
+  }
+  .contact__form {
+    width: 550px;
+  }
+  .footer {
+    height: 35vh;
+  }
+
+}
+
