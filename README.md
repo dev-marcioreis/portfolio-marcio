@@ -8,7 +8,7 @@ Sendo desenvolvido em mobile first.
 ## 🚀 Em desenvolvimento
 
 ## 📋 Tecnologias
-HTML5 + CSS3 + JavaScript - GSPA + Swiper + 
+HTML5 + CSS3 + JavaScript - GSPA + Swiper + Scrollreveal
 
 ## ✒️ Autor
 Márcio Reis
