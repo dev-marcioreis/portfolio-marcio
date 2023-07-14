@@ -232,6 +232,32 @@ img {
 }
 
 
+/*==========Scrollbar==========*/
+::-webkit-scrollbar {
+  width: .5rem;
+  border-radius: .5rem;
+  background: var(--body-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--light-blue-color);
+  border-radius: .5rem;
+  transition: var(--transition);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color-light);
+  border-radius: .5rem;
+}
+
+
+/*==========Media Query Mobile Scrollbar==========*/
+@media (max-width: 768px) {
+  .scrollbar, .progress-scrollbar {
+    display: none;
+  }
+
+}
+
+
 /*==========JavaScript Scroll Up==========*/
 .show-scroll {
   opacity: 1;
@@ -361,6 +387,12 @@ img {
 }
 .scrolling-navbar {
   box-shadow: var(--shadow);
+}
+.active__link-section.navbar__link i {
+  background: var(--light-blue-color);
+  color: var(--white-color);
+  transform: scale(1.1) rotate(360deg);
+  transition: var(--transition);
 }
 
 

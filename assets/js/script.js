@@ -147,3 +147,16 @@ const sendEmail = e => {
 }
 
 contactForm.addEventListener('submit', sendEmail)
+
+
+// Scrollbar
+let progressScrollbar = document.querySelector('.progress-scrollbar')
+let totalHeight = document.body.scrollHeight - window.innerHeight
+
+window.onscroll = function() {
+
+    let progressHeight = (window.pageYOffset / totalHeight) * 100
+    progressScrollbar.style.height = progressHeight + '%'
+
+
+}
