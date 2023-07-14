@@ -25,3 +25,13 @@ if(window.innerWidth < 992) {
         })
     })
 }
+
+
+// Change menu navbar color when scrolling
+window.addEventListener('scroll', () => {
+    document.querySelector('.navbar').classList.toggle('scrolling-navbar', window.scrollY)
+})
+
+window.addEventListener('scroll', () => {
+    document.querySelector('.home__socials').classList.toggle('scrolling-socials', window.scrollY)
+})
