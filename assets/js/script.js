@@ -160,3 +160,24 @@ window.onscroll = function() {
 
 
 }
+
+
+// Scrollreveal animation
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  reset: true
+})
+
+sr.reveal(`.home__content, .home__title`)
+sr.reveal(`.home__info div`, {delay: 600, origin: 'bottom', interval: 100})
+sr.reveal(`.sec__title, .sec__subtitle, .skills__title`, {delay: 500, origin: 'top', interval: 100})
+sr.reveal(`.skills__data`, {delay: 500, origin: 'bottom', interval: 100})
+sr.reveal(`.qualifications__content`, {delay: 400, origin: 'bottom', interval: 100})
+sr.reveal(`.services__card, .services__description`, {delay: 500, origin: 'top', interval: 100})
+sr.reveal(`.portfolio__card`)
+sr.reveal(`.contact__title`, {delay: 300, origin: 'top'})
+sr.reveal(`.contact__info, .contact__form`, {delay: 500, origin: 'bottom', interval: 100})
+sr.reveal(`.footer__container`, {delay: 200, origin: 'bottom'})

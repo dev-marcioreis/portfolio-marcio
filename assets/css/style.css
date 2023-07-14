@@ -924,7 +924,6 @@ img {
   align-items: center;
   gap: .5rem;
   width: max-content;
-  background: var(--white-color);
   color: var(--text-color-light);
 }
 .contact__btn i {
@@ -989,6 +988,7 @@ img {
   resize: none;
 }
 .contact__form .btn {
+  background: var(--white-color);
   position: absolute;
   bottom: -7rem;
   right: .3rem;
