@@ -13,7 +13,7 @@ HTML5 + CSS3 + JavaScript - GSPA + Swiper + Scrollreveal + Emailjs
 Márcio Reis
 
 😊 Link de acesso: https://marcioreis.vercel.app/
-😊 Link de acesso portfólio anterior: 
+😊 Link de acesso portfólio anterior: https://dev-marcioreis.github.io/mdrs/
 
 ---
 ![image](https://github.com/dev-marcioreis/portfolio-marcio/assets/122680054/a44265b6-b970-4e4b-85f3-bd13a79430cc)
